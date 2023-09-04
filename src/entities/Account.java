@@ -42,4 +42,15 @@ public class Account {
 		return balance;
 	}
 
+	@Override
+	public String toString() {
+		return "---------------" +
+				"\nConta: " +
+				getNumber() +
+				"\nTitular: " +
+				getHolder() +
+				"\nSaldo: " +
+				String.format("%.2f", getBalance());
+	}
+
 }
