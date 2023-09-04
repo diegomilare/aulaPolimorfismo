@@ -7,6 +7,7 @@ public class BusinessAccount extends Account {
 	}
 
 	public BusinessAccount(Integer number, String holder, Double balance, Double loanLimit) {
+		super(number, holder, balance);
 		this.loanLimit = loanLimit;
 	}
 
@@ -19,7 +20,7 @@ public class BusinessAccount extends Account {
 			deposit(ammount);
 		}
 		else {
-			System.out.println("Empréstimo acima do limite. Limite máximo de R$" + String.format("%.2f", loanLimit));
+			System.out.println("Emprestimo acima do limite. Limite maximo de R$" + String.format("%.2f", loanLimit));
 		}
 	}
 	

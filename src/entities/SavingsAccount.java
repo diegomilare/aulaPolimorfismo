@@ -3,7 +3,6 @@ package entities;
 public class SavingsAccount extends Account {
 	private Double interestRate; //Taxa de juros
 	
-	
 	public SavingsAccount() {
 	}
 
